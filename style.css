@@ -1,0 +1,357 @@
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(250, 250, 210, 0.5);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid blue; 
+  background-color:rgb(255, 255, 255, 0.7);
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 130px;
+  z-index: 2;
+  
+}
+
+h1 {
+  font-size: 6rem;
+  color: teal;
+  margin-left: 3rem;
+}
+
+.h1-logo {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+nav {
+  padding-top: 5rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6em;;
+}
+
+.nav-list li {
+  padding-right: 7rem;
+  list-style-type: none;
+  
+}
+
+.nav-list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(1, 99, 99);
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+ 
+}
+
+nav .nav-list li a:hover {
+  transform: scale(110%);
+  text-shadow: 3px 3px 2px rgb(0, 33, 33, 0.5);
+}
+
+#main-index {
+  display: flex;
+}
+#main-image-section {
+  flex-basis: 70%;
+}
+
+#aside-index {
+  flex-basis: 30%;
+  text-align: center;
+  max-height: 100vh;
+  overflow: scroll;
+  
+}
+
+#aside-h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  padding-left: 6rem;
+  margin-bottom: 4rem;
+  color:  #f8b500;
+  border-bottom: 5px solid #d89f02;
+  display: inline-block;
+  background: url('images/emojione--cooking.png') no-repeat left;
+}
+
+#template-img-shuffle {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover; 
+}
+
+#aside-card {
+  margin-left: 2rem;
+}
+
+figure {
+  margin: 0;
+ 
+}
+
+.main-img {
+  max-width: 100%;
+  position: relative;
+  filter: brightness(0.8);
+}
+
+
+.catchphrase {
+  letter-spacing: 1.1rem;
+  font-size: 12rem;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  animation-name: text-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.txt1 {
+  animation-delay: 2s;
+
+}
+.txt2 {
+  padding-top: 18rem;
+  padding-left: 15rem;
+  animation-delay: 3.5s;
+}
+
+.txt3 {
+  padding-top: 36rem;
+  padding-left: 30rem;
+  animation-delay: 5s;
+}
+
+.photo2-img {
+  max-width: 100%
+}
+
+
+@keyframes text-slide {
+  0%{
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+
+/*recipe page*/
+
+#body-recipe-page {
+  background-color: rgb(240, 255, 255, 0.5);
+}
+
+#recipe-main {
+  display: flex;
+}
+
+#recipe-article {
+  flex-basis: 85%;
+}
+
+#find-aside {
+  flex-basis: 15%;
+  height: 300px;
+  position: sticky;
+  top: 150px;
+}
+
+#h1-title {
+  font-size: 6rem;
+  color: teal;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.recipe-search {
+ max-width: 80%;
+ height: 300px;
+ margin-left: 3rem;
+}
+
+.search {
+  font-size: 3rem;
+  color: indigo;
+}
+
+#categoryOptions {
+  margin-bottom: 5rem;
+}
+
+.input-box {
+  width: 300px;
+  height: 40px;
+  font-size: 2.5rem;
+  border: 3px solid #008080;
+}
+
+#h2-recipe-list,
+#h2-user-recipe {
+  color: indigo;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 5px solid rgba(244, 186, 77, 0.742);
+  margin-left: 3rem;
+}
+#h2-user-recipe {
+  margin-top: 5rem;
+}
+
+#card-list{
+  margin: 3rem;
+}
+.card {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+#template-img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover; 
+}
+.card-title {
+  font-size: 3rem;
+}
+.card-content {
+  font-size: 2rem;
+}
+.card-time,
+.card-carb,
+.card-pro {
+  margin-bottom: 1.5rem;
+  font-weight: bolder;
+}
+#card-btn {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/*Form page*/
+
+.homemade-apple-regular {
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-inner {
+  display: flex;
+  gap: 99rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+#form-body {
+  background: url(images/bg-preview.jpg);
+  position: relative;
+}
+
+.form-main {
+  height: 1380px;
+  margin-top: 5rem;
+  background: url("images/form_bg2.jpg") no-repeat center top;
+ 
+}
+.form {
+  max-width: 960px;
+  padding-top: 7rem;
+  margin: 0 auto;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.form-title {
+  font-size: 5rem;
+  color: rgb(235, 176, 87);
+  padding-top: 5rem;
+  font-weight: bold;
+}
+
+.form label {
+  font-size: 3rem;
+}
+
+.form input,
+.form textarea {
+  max-width: 60%;
+  width: 400px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  background-color: rgb(249, 239, 240, 0.6);
+}
+
+.form button {
+  border: none;
+  font-size: 3rem;
+  border-radius: 50%;
+  background-color: rgb(252, 252, 220, 0.6);
+  padding: 0 3rem;
+  position: absolute;
+  right: 40%;
+}
+
+.form button:hover {
+  border: 1px dashed blue;
+  box-shadow: 2px 2px 2px  rgb(1, 1, 89, 0.8);
+}
+
+.btn-icon {
+  padding-top: 10px;
+}
+
+
+/*footer*/
+ footer {
+  width: 100%;
+  height: 60px;
+  background-color: teal;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+ }
+
+ small {
+  font-size: 2.5rem;
+ }
+
+ #small-override {
+  font-size: 2.5rem;
+ }
+ 

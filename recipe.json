@@ -1,0 +1,28 @@
+{
+  "usersRecipe": [
+    {
+      "title": "pancake",
+      "ingredients": "Milk",
+      "content": "Mix them all",
+      "totalTime": "15",
+      "photoUrl": "https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 1
+    },
+    {
+      "title": "pancake2",
+      "ingredients": "Flour, milk, sugar, egg, butter",
+      "content": "Mix them all",
+      "totalTime": "30",
+      "photoUrl": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 2
+    },
+    {
+      "title": "carrot cake",
+      "ingredients": "carrot. flour, butter",
+      "content": "Mix",
+      "totalTime": "30",
+      "photoUrl": "https://www.inspiredtaste.net/wp-content/uploads/2024/01/Carrot-Cake-Recipe-Video.jpg",
+      "id": 3
+    }
+  ]
+}
